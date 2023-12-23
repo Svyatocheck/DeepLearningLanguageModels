@@ -56,7 +56,7 @@
 ## Структура проекта
 ### Данные
 [Данные](https://drive.google.com/file/d/1ikA_Ht45fXD2w5dWZ9sGTSRl-UNeCVub/view)
-[Эмюеддинги](https://drive.google.com/uc?export=download&id=1mCh5vi7ubWowyW2tizImeA99TB4Sh34Y)
+[Эмбеддинги](https://drive.google.com/uc?export=download&id=1mCh5vi7ubWowyW2tizImeA99TB4Sh34Y)
 [Резюме](https://drive.google.com/uc?export=download&id=12dok7__WM2mUX7WkddpQducp6YJioxsg)
 
 ### Frontend
