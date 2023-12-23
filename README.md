@@ -62,14 +62,7 @@ Simple telegram bot to demonstrate language model.
 
 ## Детекция знаков
 ### Данные
-[Данные](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign )
-
-
-
-### Статьи
-[Статья 1](https://www.researchgate.net/publication/346250677_Automatic_Traffic_Sign_Recognition_Artificial_Inteligence_-_Deep_Learning_Algorithm)
-
-[Статья 2](https://link.springer.com/article/10.1007/s10639-022-11391-z)
+[Данные](https://drive.google.com/file/d/1ikA_Ht45fXD2w5dWZ9sGTSRl-UNeCVub/view)
 
 ### Видео
 [Про разметку](https://www.youtube.com/watch?v=wjgnYyU6Ymc)
