@@ -13,7 +13,7 @@ welcome_message = (
 )
 
 job_seeker_sorry_message = (
-    "Job seeker's functionality not yet implemented. Please, come back later."
+    "Job seeker's functionality not yet implemented. Please, come back later. Type /start to relogin to the bot."
 )
 
 hr_welcome_message = (

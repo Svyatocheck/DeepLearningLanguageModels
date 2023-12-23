@@ -53,6 +53,6 @@ class Database:
         self.save_to_database()
 
     def save_to_database(self):
-        faiss.write_index(self.index, r"database\database_e5.index")
+        faiss.write_index(self.index, r"database/database_e5.index")
     
         
