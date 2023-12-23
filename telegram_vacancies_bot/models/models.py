@@ -40,7 +40,7 @@ class Form(StatesGroup):
     Defines states for the user data update process.
     """
     waiting_for_user_data = State()
-
+    waiting_for_query = State()
     waiting_for_role = State()  # User has started the conversation but hasn't chosen a role
     waiting_for_resume = State()  # User is expected to send a resume
     waiting_for_job_description = State()  # User is expected to send a job description

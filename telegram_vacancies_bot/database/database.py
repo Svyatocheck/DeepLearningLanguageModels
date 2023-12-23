@@ -25,8 +25,8 @@ class Database:
         df = pd.read_csv(r'database/hh_database_clear.csv', index_col=0)
         return faiss_search_e5(r"temp/example.txt", self.index, df)
 
-    def improve_vacancy(self) -> str:
-        return "Делай это и твоя спина никогда не будет болеть."
+    def improve_vacancy(self, message) -> str:
+        return f"You answered {message}"
     
     def get_hr_users(self):
         return self.hr_users

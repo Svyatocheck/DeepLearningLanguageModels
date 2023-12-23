@@ -64,9 +64,19 @@ def register_hr_handlers(dp: Dispatcher, bot : Bot, database : Database):
 
 
     @dp.callback_query_handler(lambda c: c.data == 'improve_vacancy', state=Form.waiting_for_job_description)
-    async def handle_improve_request(callback_query: types.CallbackQuery):
-        improvement = database.improve_vacancy()
-        await bot.send_message(callback_query.from_user.id, improvement)
+    async def handle_improve_request(callback_query: types.CallbackQuery, state : FSMContext):
+        await bot.send_message(callback_query.from_user.id, "Provide as a query you would like to have an answer related to your vacancy")
+        await state.finish()
+        await Form.waiting_for_query.set()
+
+
+    @dp.message_handler(content_types=['text'], state=Form.waiting_for_query)
+    async def handle_improve_request_query(message: types.Message, state : FSMContext):
+        improvements = database.improve_vacancy(message.text)
+        await state.finish()
+        await message.reply(improvements)
+        await message.reply("Here is your suggestions. Feel free to send us another link to vacancy.")
+        await Form.waiting_for_job_description.set()
 
 
     @dp.message_handler(commands=['done'], state=Form.waiting_for_job_description)
